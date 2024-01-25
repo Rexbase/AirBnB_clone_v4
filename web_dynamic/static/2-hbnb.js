@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+//The host URL for API 
+const HOST = 100.24.242.121;
+
+//Initialization function
+function init() {
+	//An object to store selected amenities
+	const amenityObj = {};
+
   let checkedAmenities = {};
   $(document).on('change', "input[type='checkbox']", function () {
     if (this.checked) {
